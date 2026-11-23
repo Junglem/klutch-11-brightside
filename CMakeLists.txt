@@ -23,6 +23,8 @@ juce_add_plugin(KLUTCH11BRIGHTSIDE
   EDITOR_WANTS_KEYBOARD_FOCUS FALSE
   COPY_PLUGIN_AFTER_BUILD FALSE)
 
+juce_generate_juce_header(KLUTCH11BRIGHTSIDE)
+
 target_sources(KLUTCH11BRIGHTSIDE PRIVATE
   Source/PluginProcessor.cpp
   Source/PluginEditor.cpp)
